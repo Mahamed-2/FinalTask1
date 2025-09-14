@@ -21,3 +21,5 @@ utveckla fråmaga båda dig och team.
 Vad har varit mest intressant under kursens tre veckor?
 
 kunna grundna av informationssytem och hur det byggs.
+
+Badge ![PR Build Status](https://github.com/<USER>/<REPO>/actions/workflows/pull_request_check.yml/badge.svg)
