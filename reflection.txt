@@ -1,9 +1,23 @@
 Vad visste du om mjukvaruutveckling innan kursen – och vad vet du nu?
 
+ att det var bara kod , jag har nu lärt mig att det är mer än bara kod och det är att bygga system som kräver 
+ forskning,design,kodning ,testing och förbättering och kod ör 10% av jobbet.
+
 Vad betyder “DevOps” för dig? Hur skulle du förklara det till en kompis?
+ 
+ det är kombination mellan developer och operatörer , att tillverka ett app eller webapp kräver att vara devOps som kan 
+ båda koda och producerar i webbe eller platformer.
 
 Hur tänker du kring molnet? Vad känns spännande – och vad känns svårt?
 
+det är en väldigt effektiv lösningar till developer och hjälper som arbetning i olika dator samt samma projekt, 
+det finns mycket funktioner och services som kräver långtid att kunna.
+
 Vad innebär det att vara en systemutvecklare i ett team?
 
+att kunna foklara båda development och operation, samt att kunna lösa problem med att
+utveckla fråmaga båda dig och team.
+
 Vad har varit mest intressant under kursens tre veckor?
+
+kunna grundna av informationssytem och hur det byggs.
