@@ -13,10 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send GIF to Discord
-        uses: appleboy/discord-action@v1.2.0
-        with:
-          webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
-          message: "🔥 Done! \nhttps://media.tenor.com/images/5c3a3a5b65d06b9d18d1a1c01e1f2b2b/tenor.gif"
-
-          username: GIFBot
+        run: |
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d '{
+                     "username": "mohamedali8230",
+                     "content": "🔥 Done! https://media.tenor.com/images/5c3a3a5b65d06b9d18d1a1c01e1f2b2b/tenor.gif"
+                   }' \
+               ${{ secrets.DISCORD_WEBHOOK }}
          
