@@ -13,15 +13,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send GIF to Discord
-        uses: appleboy/discord-action@v1
+        uses: appleboy/discord-action@v1.2.0
         with:
           webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
-          message: "🔥Done!"
-          username: GIFBot
-          embeds: |
-            [{
-              "title": "One Piece GIF",
-              "description": "Monkey D. Luffy in action!",
-              "image": { "url": "https://media.tenor.com/images/5c3a3a5b65d06b9d18d1a1c01e1f2b2b/tenor.gif" },
-              "color": 16776960
-            }]
+          message: "🔥 Done! \nhttps://media.tenor.com/images/5c3a3a5b65d06b9d18d1a1c01e1f2b2b/tenor.gif"
+
+          username: M2
+         
