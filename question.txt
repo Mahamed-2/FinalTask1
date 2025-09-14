@@ -1,9 +1,0 @@
-Vad är skillnaden mellan IaaS, PaaS och SaaS?
-
-Vad gör Git och vad är GitHub?
-
-Vad är ett informationssystem?
-
-Vad är CIA-triaden?
-
-Vad är Continuous Integration (CI)?
