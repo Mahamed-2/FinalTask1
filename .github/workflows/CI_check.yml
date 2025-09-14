@@ -9,30 +9,19 @@ jobs:
     - uses: actions/checkout@v3
     - name: question
       run: echo \"Hejsan! Detta är en automatisk körning via GitHub Actions\"
-
-  notify-discord:
+ notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Send Discord Notification
-        uses: appleboy/action-discord@v1
+      - name: Send GIF to Discord
+        uses: appleboy/discord-action@v1
         with:
-          webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          message: |
-            🚀 New push to **${{ github.repository }}** by ${{ github.actor }}!
-            Branch: ${{ github.ref_name }}
-            Commit: ${{ github.sha }}
-
-  send-meme:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Send meme to Discord
-        uses: appleboy/action-discord@v1
-        with:
-          webhook: ${{ secrets.DISCORD_WEBHOOK }}
-          message: |
-            done!
-          username: MemeBot
+          webhook_url: ${{ secrets.DISCORD_WEBHOOK }}
+          message: "🔥done!"
+          username: GIFBot
           embeds: |
             [{
-             <div class="tenor-gif-embed" data-postid="19718751" data-share-method="host" data-aspect-ratio="1.76796" data-width="100%"><a href="https://tenor.com/view/one-piece-anime-luffy-monkey-d-luffy-blueno-gif-19718751">One Piece Anime GIF</a>from <a href="https://tenor.com/search/one+piece-gifs">One Piece GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+              "title": "One Piece GIF",
+              "description": "Monkey D. Luffy in action!",
+              "image": { "url": "https://media.tenor.com/images/5c3a3a5b65d06b9d18d1a1c01e1f2b2b/tenor.gif" },
+              "color": 16776960
             }]
