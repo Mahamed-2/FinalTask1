@@ -1,0 +1,24 @@
+name: CI Check
+
+on: [push]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: question
+        run: echo "Hejsan! Detta är en automatisk körning via GitHub Actions"
+
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send GIF to Discord via curl
+        run: |
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d '{
+                     "username": "mohamedali8230",
+                     "content": "🔥 Done! https://tenor.com/view/one-piece-anime-luffy-monkey-d-luffy-blueno-gif-19718751"
+                   }' \
+               ${{ secrets.DISCORD_WEBHOOK }}
